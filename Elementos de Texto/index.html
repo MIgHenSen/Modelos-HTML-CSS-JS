@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Demonstração de Elementos HTML Básicos </title>
+</head>
+<body>
+    <header>
+        <h1> Guia de Elementos HTML Básicos </h1>
+    </header>
+
+    <section>
+        <h2> 1. Cabeçalhos (Heading Elements: H1 a H6) </h2>
+        <p> Os elementos `h1` a `h6` são usados para definir títulos de seções e subseções. `h1` é o 
+            mais importante (o título principal da página) e `h6` o de menor importância, criando uma 
+            hierarquia estrutural. </p>
+        </br>
+
+        <h3>Hierarquia e Estilo (H3)</h3>
+        <h4>Subseção de Exemplo (H4)</h4>
+        <h5>Detalhes Adicionais (H5)</h5>
+        <h6>Nota de Rodapé (H6)</h6>
+    </section>
+
+    <section>
+        <h2> 2. Parágrafo (`p`) </h2>
+        <p> O elemento `p` é utilizado para agrupar blocos de texto, formando parágrafos. O navegador 
+            automaticamente adiciona algum espaço antes e depois de cada parágrafo (o que é visível com 
+            o CSS aplicado). </p>
+        <p> Este é o segundo parágrafo de exemplo. Ele demonstra como o navegador renderiza o espaçamento 
+            entre dois elementos `p` consecutivos. Use-o para conteúdo textual principal. </p>
+    </section>
+    
+    <section>
+        <h2> 3. Listas Não Ordenadas (`ul` e `li`) </h2>
+        <p> O elemento `ul` (Lista Não Ordenada) é usado para agrupar itens que não precisam de uma 
+            ordem sequencial específica. Cada item da lista é representado pelo elemento `li` 
+            (List Item). </p>
+
+        <ul>
+            <li> Item Não Ordenado A </li>
+            <li> Item Não Ordenado B </li>
+            <li> Item Não Ordenado C </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2> 4. Listas Ordenadas (`ol` e `li`) </h2>
+        <p> O elemento `ol` (Lista Ordenada) é usado para agrupar itens que estão em uma sequência ou 
+            ordem específica (como um passo-a-passo ou ranking). Assim como na `ul`, cada item é um 
+            `li`.</p>
+
+        <ol>
+            <li> Primeiro Passo: Salve o arquivo HTML. </li>
+            <li> Segundo Passo: Abra-o no seu navegador. </li>
+            <li> Terceiro Passo: Observe os estilos e as tags. </li>
+        </ol>
+    </section>
+
+    <section>
+        <h2> 5. Links / Âncoras (`a`) </h2>
+        <p> O elemento `a` (âncora) é usado para criar hiperlinks. O atributo essencial é o `href`, que 
+            especifica o destino do link. </p>
+        
+        <p>Exemplo de link externo: 
+            <a href="https://www.google.com" target="_blank"> Visitar o Google </a>
+        </p>
+        
+        <p>Exemplo de link interno (apontando para uma seção da mesma página):
+            <a href="#botao-js"> Ir para a Seção de JavaScript </a>
+        </p>
+    </section>
+
+    <section id="secao-js">
+        <h2> 6. Demonstração de JavaScript </h2>
+        <p> O JavaScript pode interagir com os elementos HTML. Aqui, ele alterará o conteúdo de um 
+            parágrafo ao clicar no botão. </p>
+
+        <button id="botao-js"> Clique para Ver o JS em Ação </button>
+
+        <p id="resultado-js"> O resultado do JavaScript aparecerá aqui. </p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
