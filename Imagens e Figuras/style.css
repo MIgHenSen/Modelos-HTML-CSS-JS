@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+body {
+    margin: 20px;
+    background-color: black;
+    color: white; }
+.container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap; }
+figure {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    max-width: 300px;
+    text-align: center; }
+figcaption {
+    background-color: gray;
+    padding: 5px;
+    font-style: italic; }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; }

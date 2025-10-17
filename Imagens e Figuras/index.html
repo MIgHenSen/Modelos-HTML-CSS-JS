@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Exemplo de Imagens e Figuras </title>
+</head>
+<body>
+
+    <h1> Exemplo de Tags de Imagem e Figura </h1>
+    <div class="container">
+        <section>
+            <h2> Uso da Tag &lt; img &gt; com atributo `alt` </h2>
+            <p> A tag &lt; img &gt; é usada para incorporar uma imagem. O atributo `alt` (texto 
+                alternativo) é crucial para acessibilidade e SEO, descrevendo a imagem caso ela não 
+                possa ser carregada ou para leitores de tela. </p>
+            
+            <img src="#" 
+                alt="Uma paisagem de montanhas ao pôr do sol, ilustrando a beleza da natureza."
+                width="300" height="200" >
+            <p> Neste caso, se a imagem não carregar, o texto "Uma paisagem de montanhas ao pôr do sol, 
+                ilustrando a beleza da natureza." será exibido. </p>
+        </section>
+
+        <section>
+            <h2> Uso de &lt; figure &gt; e &lt; figcaption &gt; </h2>
+            <p> As tags &lt; figure &gt; e &lt; figcaption &gt; são usadas para agrupar conteúdo 
+                (geralmente uma imagem) com sua legenda. O &lt;figure&gt; representa um conteúdo 
+                autônomo (como diagramas, fotos, códigos, etc.) referenciado no fluxo principal, mas 
+                cuja posição é, de certa forma, independente. </p>
+            
+            <figure>
+                <img src="caminho/para/sua/imagem-com-legenda.png" 
+                    alt="Um close-up de uma abelha pousando em uma flor amarela."
+                    width="300" height="225" >
+                <figcaption> Figura 1: Uma abelha polinizando uma flor. Esta é a legenda da imagem, 
+                    fornecida pela tag &lt; figcaption &gt;. </figcaption>
+            </figure>
+
+            <p> O conteúdo dentro do &lt; figure &gt; (a imagem e a legenda) está semanticamente ligado. </p>
+        </section>
+    </div>
+
+</body>
+</html>
