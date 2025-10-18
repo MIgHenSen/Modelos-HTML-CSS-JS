@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: black; }
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; }
+.card{
+    width: 100%;
+    background-color: lightblue;
+    padding: 40px;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 2px 2px 2px 1px blue;}
+.header{
+    padding-bottom: 50px;
+    opacity: 0.8;
+    color: red; }
+.header::after{
+    content: "";
+    width: 70px;
+    height: 1px;
+    display: block;
+    margin-top: -17px;}
+.main label{
+    color: black;
+    font-size: 12px;
+    opacity: 0.8;}
+.entrada-dados{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;}
+.entrada-dados input{
+    margin-top: 10px;
+    padding: 5px 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid purple;
+    outline: none;
+    color: black; }
+.footer{
+    display: flex;
+    flex-direction: column; }
+.footer .submit{
+    width: 100%;
+    height: 40px;
+    background-color: blueviolet;
+    border: none;
+    margin: 10px 0;
+    border-radius: 15px;
+    color: white;
+    font-size: bold;
+    cursor: pointer;
+    transition: 0.5s; }
+.footer .submit:hover {
+    background-color: bisque;
+    color: purple; }
+.footer a{
+    text-align: center;
+    font-size: 12px;
+    opacity: 0.8;
+    color: purple;
+    text-decoration: none; }
+.footer a:hover {
+    color: brown; }
