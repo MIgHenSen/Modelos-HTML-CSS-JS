@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Calculadora de Média</h1>
+        
+        <p>Digite os números separados por vírgula (Ex: 10, 5.5, 8, 7.2):</p>
+        
+        <textarea id="inputNumeros" placeholder="Digite os números aqui..." rows="5"></textarea>
+        
+        <button onclick="calcularMedia()">Calcular Média</button>
+        
+        <div class="resultados">
+            <h2>Resultados:</h2>
+            <p id="totalElementos">Total de elementos: 0</p>
+            <p id="mediaCalculada">Média: 0</p>
+            <p id="mensagem" class="erro"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
