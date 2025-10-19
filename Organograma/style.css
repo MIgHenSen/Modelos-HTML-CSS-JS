@@ -1,0 +1,104 @@
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Permite que o conteúdo comece no topo, não no centro da tela */
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding-top: 20px; /* Espaço para o título */
+}
+
+.organogram-container {
+    max-width: 100%; /* Permite que o container se ajuste à tela */
+    /* Removendo width: 100%; e height: 100%; daqui para permitir rolagem se necessário */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box; /* Inclui padding na largura */
+}
+
+h1 {
+    color: #0056b3;
+    margin-bottom: 30px;
+}
+
+/* Permitir rolagem horizontal no organograma principal em telas pequenas */
+.organogram {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-x: auto; /* A CHAVE DA RESPONSIVIDADE HORIZONTAL */
+    padding-bottom: 20px; /* Espaço para a barra de rolagem */
+}
+
+/* --- Estilos do Cartão da Pessoa --- */
+
+.photo-container {
+    width: 80px; /* Diminuído para melhorar o ajuste */
+    height: 80px; /* Diminuído para melhorar o ajuste */
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #0056b3; /* Borda um pouco mais fina */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 8px;
+}
+
+.photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.role {
+    margin-top: 5px;
+    font-weight: bold;
+    color: #0056b3; /* Cor da função para destaque */
+    font-size: 0.95rem; /* Usando unidade relativa */
+}
+
+.name {
+    font-size: 0.85rem; /* Usando unidade relativa */
+    color: #666;
+    margin-top: 3px;
+}
+
+.person {
+    width: 180px; /* Levemente diminuído para telas menores */
+    min-width: 150px; /* Garante que não fique muito pequeno */
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fcfcfc;
+    transition: transform 0.2s; /* Efeito visual */
+}
+
+/* --- Estrutura Hierárquica e Linhas de Conexão --- */
+
+/* Contêiner de um Líder e Seus Subordinados */
+.node-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Essencial para os pseudo-elementos de linha */
+    padding-top: 30px; /* Espaço para a linha vertical de conexão */
+}
+
+/* Contêiner que segura todos os Subordinados */
+.children-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    margin-top: 0; /* A linha já dá o espaçamento */
+    padding: 0 10px;
+    position: relative; /* Essencial para a linha horizontal */
+}
