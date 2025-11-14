@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Livros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>📖 Catálogo de Livros</h1>
+    </header>
+
+    <div class="controls">
+        <input type="text" id="searchInput" placeholder="Pesquisar por título, autor ou tema..." onkeyup="filterBooks()">
+        
+        <label for="authorFilter">Filtrar por Autor:</label>
+        <select id="authorFilter" onchange="filterBooks()">
+            <option value="">Todos os Autores</option>
+            </select>
+
+        <label for="themeFilter">Filtrar por Tema:</label>
+        <select id="themeFilter" onchange="filterBooks()">
+            <option value="">Todos os Temas</option>
+            </select>
+    </div>
+
+    <div id="bookList" class="book-grid">
+        </div>
+
+    <footer>
+        <p>&copy; 2025 Catálogo Simples</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
