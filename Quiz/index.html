@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz com Imagens e Fórmulas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz de Ciências Exatas 🧪</h1>
+        
+        <div class="quiz-content">
+            
+            <div class="image-display">
+                <img id="question-image" src="" alt="Fórmula ou Resolução" class="hide">
+                <div class="image-placeholder">
+                    <p>A imagem ou fórmula da questão aparecerá aqui.</p>
+                </div>
+            </div>
+            
+            <div id="quiz-box" class="quiz-box">
+                <h2 id="question">Carregando pergunta...</h2>
+                
+                <p id="hint-text" class="hide hint-style"></p>
+                <button id="hint-btn" class="hint-btn">Mostrar Dica</button>
+                
+                <div id="answer-buttons" class="btn-grid">
+                    </div>
+                <button id="next-btn" class="next-btn hide">Próxima Pergunta</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
